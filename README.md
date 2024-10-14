@@ -65,7 +65,7 @@ Applikationen är förberedd för att kunna distribueras på en AWS-instans, som
 
 ### Connection refused
 
-Om du stöter på ett felmeddelande som indikerar "Connection refused", se till att du har en server som körs på den angivna porten, t.ex. `localhost:8080`. Du kan enkelt sätta upp en server med t.ex. Spring Boot eller Flask för att ta emot och svara på GET- och POST-förfrågningar.
+Om du stöter på ett felmeddelande som indikerar "Connection refused", se till att du har en server som körs på den angivna porten, t.ex. `localhost:5000`. Du kan enkelt sätta upp en server med t.ex. Spring Boot eller Flask för att ta emot och svara på GET- och POST-förfrågningar.
 
 ## Beroenden
 
