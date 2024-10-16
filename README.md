@@ -48,8 +48,8 @@ Raderar data.
     mvn exec:java -Dexec.mainClass="AWSklientAS.Main"
     ```
 
-4. **Testa GET- och POST-förfrågningar**:
-    Applikationen gör GET- och POST-förfrågningar till ett API. Se till att du har en server igång på `http://localhost:5000` som kan ta emot dessa förfrågningar.
+4. **Testa GET- POST- PUT- och DELETE-förfrågningar**:
+    Applikationen gör GET- och POST- PUT- och DELETE-förfrågningar till ett API. Se till att du har en server igång på `http://localhost:5000` som kan ta emot dessa förfrågningar.
 
     Du kan också uppdatera URL:en i `Main.java` till en extern API-server om du vill testa mot en fjärrtjänst:
     ```java
