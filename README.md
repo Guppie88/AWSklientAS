@@ -6,6 +6,10 @@ AWSklientAS är en Java-applikation som hanterar HTTP-förfrågningar för att i
 
 - **GET-förfrågningar**: Hämtar data från ett API och presenterar det i konsolen.
 - **POST-förfrågningar**: Skickar data (t.ex. böcker och författare) till ett API.
+-**Put-förfrågningar**:
+Uppdaterar data.
+-**DELETE-förfrågningar**:
+Raderar data.
 - **Modellklasser**: Applikationen använder Java-modellklasser (`Author` och `Books`) för att representera objekt som skickas till och tas emot från API:et.
 
 ## Teknologier och Beroenden
@@ -37,7 +41,7 @@ AWSklientAS är en Java-applikation som hanterar HTTP-förfrågningar för att i
     ```
 
 3. **Kör applikationen**:
-    Om du kör applikationen med standardinställningarna, behöver du en API-server som är igång på `localhost:8080`.
+    Om du kör applikationen med standardinställningarna, behöver du en API-server som är igång på `localhost:5000`.
 
     Exempel:
     ```bash
@@ -45,11 +49,11 @@ AWSklientAS är en Java-applikation som hanterar HTTP-förfrågningar för att i
     ```
 
 4. **Testa GET- och POST-förfrågningar**:
-    Applikationen gör GET- och POST-förfrågningar till ett API. Se till att du har en server igång på `http://localhost:8080` som kan ta emot dessa förfrågningar.
+    Applikationen gör GET- och POST-förfrågningar till ett API. Se till att du har en server igång på `http://localhost:5000` som kan ta emot dessa förfrågningar.
 
     Du kan också uppdatera URL:en i `Main.java` till en extern API-server om du vill testa mot en fjärrtjänst:
     ```java
-    ServiceManager.sendGetRequest("http://localhost:8080/api/books");
+    ServiceManager.sendGetRequest("http://localhost:5000/api/books");
     ```
 
 ### Exempel på GET- och POST-förfrågningar
